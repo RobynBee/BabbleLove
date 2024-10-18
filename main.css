@@ -40,6 +40,32 @@
     border-radius: 15px;
 
     background-color: rgba(215, 242, 245, 0.85);
+
+    margin-bottom: 25px;
+}
+
+.quoteCard {
+    width: 320px;
+    height: fit-content;
+
+    padding: 5px;
+    border-radius: 15px;
+
+    background-color: rgba(221, 245, 215, 0.85);
+
+    margin-bottom: 25px;
+}
+
+.card2 {
+    width: 320px;
+    height: fit-content;
+
+    padding: 5px;
+    border-radius: 15px;
+
+    background-color: rgba(245, 245, 215, 0.85);
+
+    margin-bottom: 25px;
 }
 
 /* Global */
