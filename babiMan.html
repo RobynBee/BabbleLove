@@ -11,9 +11,11 @@
 </head>
 
 <body id="babiManBody">
-    <audio id="background_audio" autoplay loop>
-        <source src="assets/babi/LovesickLovesong.m4a" type="audio/mp4">
-    </audio>
+    <button onclick="playAudio()">Click Me</button>
+<audio id="background-audio" loop>
+    <source src="assets/background-music.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+</audio>
 
     <div class="card">
         <h1>Aan die beste babi</h1>
@@ -161,6 +163,13 @@
                 console.log('Audio playback failed:', error);
             });
         });
+
+        function playAudio() {
+        const audio = document.getElementById('background-audio');
+        audio.play().catch(error => {
+            console.log('Audio playback failed:', error);
+        });
+    }
     </script>
 </body>
 
