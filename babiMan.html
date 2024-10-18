@@ -10,9 +10,28 @@
     <script src="index.js"></script>
 </head>
 
-<body>
-    <div class="fade-in" style="height: 500px; margin: 50px;">Hello, I fade in!</div>
-    <div class="fade-in" style="height: 500px; margin: 50px;">More content fading in!</div>
+<body id="babiManBody">
+    <!-- <audio id="background_audio" autoplay loop>
+        <source src="assets/babi/LovesickLovesong.m4a" type="audio/mp4">
+    </audio> -->
+
+    <div class="card">
+        <h1>Aan die beste babi</h1>
+    </div>
+
+    <div class="card fade-in">
+        <p>Babi Man. <br> Jy is die beste partner wat ek nog ooit vir kon vra.  <br></p>
+    </div>
+
+    <script>
+        // JavaScript to play the audio after the page has fully loaded
+        window.addEventListener('load', () => {
+            const audio = document.getElementById('background-audio');
+            audio.play().catch(error => {
+                console.log('Audio playback failed:', error);
+            });
+        });
+    </script>
 </body>
 
 </html>
