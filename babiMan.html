@@ -11,11 +11,11 @@
 </head>
 
 <body id="babiManBody">
-    <button onclick="playAudio()">Click Me</button>
-<audio id="background-audio" loop>
-    <source src="https://RobynBee.github.io/BabbleLove/assets/babi/LoveSickLovesong.mp3" type="audio/mp4">
-    Your browser does not support the audio element.
-</audio>
+    <button onclick="playAudio()" style="margin-bottom: 15px;">Click Me</button>
+    <audio id="background-audio" loop>
+        <source src="https://RobynBee.github.io/BabbleLove/assets/babi/LovesickLovesong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
     <div class="card">
         <h1>Aan die beste babi</h1>
@@ -170,11 +170,11 @@
         });
 
         function playAudio() {
-        const audio = document.getElementById('background-audio');
-        audio.play().catch(error => {
-            console.log('Audio playback failed:', error);
-        });
-    }
+            const audio = document.getElementById('background-audio');
+            audio.play().catch(error => {
+                console.log('Audio playback failed:', error);
+            });
+        }
     </script>
 </body>
 
